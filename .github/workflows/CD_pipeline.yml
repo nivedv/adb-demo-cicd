@@ -29,7 +29,7 @@
          EOF
      
      - name: Import Notebook to Workspace
-       run: databricks workspace import sample_sales_notebook.py  name: CD Pipeline for Azure Databricks
+       run: databricks workspace import sample_sales_notebook.py  name:CD Pipeline for Azure Databricks
 
  on:
    push:
