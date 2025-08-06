@@ -25,7 +25,7 @@
        run: |
          databricks configure --token <<EOF
          ${{secrets.DATABRICKS_HOST}}
-         ${{secret.DATABRICKS_TOKEN}}
+         ${{secrets.DATABRICKS_TOKEN}}
          EOF
      
      - name: Import Notebook to Workspace
