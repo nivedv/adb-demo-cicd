@@ -28,8 +28,8 @@
      - name: Configure Databricks CLI
        run: |
          databricks configure --token <<EOF
-         $
-         $
+         ${{ secrets.DATABRICKS_HOST }}
+         ${{ secrets.DATABRICKS_TOKEN }}
          EOF
 
      - name: Upload sample data to DBFS
